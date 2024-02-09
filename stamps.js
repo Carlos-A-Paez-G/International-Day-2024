@@ -68,9 +68,8 @@ for(s in stamps) {
     var txt = document.createElement("h3");
     txt.className = "country";
 
-    console.log("assets/stamps/" + stamps[s] + ".png");
-    img.src = "International-Day-2024/assets/stamps/" + stamps[s] + ".png";
-    console.log(img.href);
+    img.src = "assets/stamps/" + stamps[s] + ".png";
+    console.log(img.src);
     img.alt = stamps[s] + " Stamp";
 
     var newStr = stamps[s].split("-").join(" ");

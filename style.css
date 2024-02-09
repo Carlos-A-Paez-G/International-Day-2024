@@ -52,6 +52,12 @@ a {
     border-color: #D4AF37;
 }
 
+.quitkbtn {
+    font-size: 62px;
+    border-style: solid;
+    border-color: #ff344c;
+}
+
 a:visited {
     color: #D4AF37;
 }
@@ -111,4 +117,9 @@ h3 {
 
 .stamp {
 
+}
+
+.country-listing {
+    font-size: 24px;
+    color: white;
 }

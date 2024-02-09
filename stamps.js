@@ -69,7 +69,7 @@ for(s in stamps) {
     txt.className = "country";
 
     console.log("assets/stamps/" + stamps[s] + ".png");
-    img.src = "../assets/stamps/" + stamps[s] + ".png";
+    img.src = "assets/stamps/" + stamps[s] + ".png";
     console.log(img.href);
     img.alt = stamps[s] + " Stamp";
 

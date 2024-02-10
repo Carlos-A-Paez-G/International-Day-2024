@@ -26,16 +26,48 @@
             }
 
             var cover = document.getElementsByClassName("cover");
-            console.log(cover[0].src);
+var bgColor = document.body.style.backgroundColor;
+var buttons = document.querySelectorAll('h2'); // Select all h2 elements
+var links = document.querySelectorAll('a'); // Select all a elements
 
-            console.log(stamps.length);
-            if(stamps.length >= 28) {
-                cover[0].src = "assets/Cover2.png";
-            }
+console.log(cover[0].src);
 
-            if(stamps.length >= 55) {
-                cover[0].src = "assets/Cover3.png";
-            }
+console.log(stamps.length);
+if (stamps.length >= 28) {
+    cover[0].src = "assets/Cover2.png";
+    bgColor = '#27A777';
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].style.backgroundColor = '#186347';
+    }
+    for (var i = 0; i < links.length; i++) {
+        links[i].style.color = 'black';
+        links[i].style.borderColor = 'black';
+    }
+}
+
+if (stamps.length >= 55) {
+    cover[0].src = "assets/Cover3.png";
+    bgColor = 'white';
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].style.backgroundColor = 'white'; 
+    }
+    for (var i = 0; i < links.length; i++) {
+        links[i].style.color = '#D4AF37';
+        links[i].style.borderColor = '#D4AF37'; 
+    }
+}
+cover[0].src = "assets/Cover2.png";
+    bgColor = '#27A777';
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].style.backgroundColor = '#186347';
+    }
+    for (var i = 0; i < links.length; i++) {
+        links[i].style.color = 'black';
+        links[i].style.borderColor = 'black';
+    }
+    document.body.style.backgroundColor = bgColor;
+
+            
 
         </script>
     </body>

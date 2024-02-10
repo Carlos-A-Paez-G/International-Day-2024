@@ -1,6 +1,6 @@
 //all the countries in alphabetical order
 var allCountries = [
-    'Parent Team',
+    'ParentTeam',
     'Algeria',
     'Australia',
     'Bahrain',
@@ -10,15 +10,14 @@ var allCountries = [
     'China',
     'Colombia',
     'Croatia',
-    'Cyprus',
-    'Czech Republic',
+    'CzechRepublic',
     'Denmark',
     'Egypt',
     'Finland',
     'France',
     'Germany',
-    'Greece',
-    'Hong Kong SAR',
+    'GreeceAndCyprus',
+    'HongKongSAR',
     'India',
     'Indonesia',
     'Ireland',
@@ -31,19 +30,19 @@ var allCountries = [
     'Mexica',
     'Morocco',
     'Netherlands',
-    'New Zealand',
+    'NewZealand',
     'Pakistan',
     'Palestine',
     'Philippines',
     'Poland',
     'Portugal',
-    'Saudi Arabia',
+    'SaudiArabia',
     'Scotland',
     'Serbia',
     'Singapore',
-    'Slovak Republic',
-    'South Africa',
-    'South Korea',
+    'SlovakRepublic',
+    'SouthAfrica',
+    'SouthKorea',
     'Spain',
     'Sweden',
     'Switzerland',
@@ -56,7 +55,6 @@ var allCountries = [
     'USA',
     'Yemen'
 ];
-console.log(allCountries);
 
 var stamps;
     if(!localStorage) {

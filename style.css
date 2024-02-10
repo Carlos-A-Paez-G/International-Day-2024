@@ -46,17 +46,17 @@ img {
 p {
     text-align: center;
     font-size: 30px;
-
+    color: white;
 }
 
 /* Classes */
 .backB {
     font-family: 'Poppins';
     text-align: center;
-    font-size: 80px;
+    font-size: 60px;
     padding: 5px;
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-right: 10%;
+    margin-left: 10%;
     border-width: 15px;
     border-style: solid;
     background-color: #2B2D42;
@@ -84,10 +84,12 @@ p {
     background-color: #FFF8E7;
 }
 
-.quitkbtn {
-    font-size: 62px;
+.quitbtn {
+    font-size: 36px;
     border-style: solid;
-    border-color: #ff344c;
+    padding: 10px;
+    border-color: #af0217;
+    background-color: black;
 }
 
 .stamp {
@@ -113,7 +115,13 @@ p {
 }
 
 .stampAcquiredtxt {
-    
+    font-size: 60px;
+    color: #FFF8E7;
+    font-family: 'Poppins';
+}
+
+.stampTitle {
+    color: black;
 }
 
 .title {
@@ -129,6 +137,17 @@ p {
 }
 
 /* IDs */
+#map {
+    display: block;
+    max-height: 50vh;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin-top: 150px;
+    /* right: auto; */
+    object-fit: contain;
+}
+
 #page {
     background-color: #FFF8E7;
 }

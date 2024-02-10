@@ -15,14 +15,28 @@
         <h2><a href="stamps.html">Stamps</a></h2>
         <h2><a href="list.html">Country List</a></h2>
         <h2><a href="map.html">Map</a></h2>
-        <h2><a href="message.html">Message</a></h2>
         <h2><a href="credits.html">Credits</a></h2>
 
 
         <script>
             if(!localStorage) {
                 localStorage.setItem('stamps', '[]');
+            } else {
+            stamps = JSON.parse(localStorage.getItem('stamps')) || [];
             }
+
+            var cover = document.getElementsByClassName("cover");
+            console.log(cover[0].src);
+
+            console.log(stamps.length);
+            if(stamps.length >= 28) {
+                cover[0].src = "assets/Cover2.png";
+            }
+
+            if(stamps.length == 57) {
+                cover[0].src = "assets/Cover3.png";
+            }
+
         </script>
     </body>
 </html>

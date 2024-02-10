@@ -29,7 +29,7 @@ if(!obtained) {
 var countryText = country[0]; //will contain the properly formatted country name
 var num = 0; //the last character that was cut from
 
-
+//Get country name from URL
 for(var i = 1; i < country.length; i++) {
     if(country[i] == country[i].toUpperCase()) {
         countryText = countryText.concat(" ");   
@@ -38,17 +38,24 @@ for(var i = 1; i < country.length; i++) {
 }
 
 var image = document.createElement('img');
-image.src = "../assets/stamps/" + country + ".png";
+image.src = "../assets/stamps/" + countryText + ".png";
+console.log(image.src);
 image.className = "stampAcquired";
+
+var title = document.createElement('h1');
+title.className = "title";
+title.innerHTML = "Congratulations!!!";
 
 var text = document.createElement('p');
 text.innerHTML = "Congratulations! You got the " + countryText + " stamp!!!"; 
 text.className = "stampAcquiredtxt";
 
 var backButton = document.createElement('a');
-backButton.class = 'backB';
+backButton.className = 'backB';
+backButton.innerHTML = 'Back to Passport';
 backButton.href = "../stamps.html";
 
+document.body.appendChild(title);
 document.body.appendChild(image);
 document.body.appendChild(text);
 document.body.appendChild(backButton);
